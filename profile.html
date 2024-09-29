@@ -230,6 +230,17 @@
         height: 30px;
         margin-left: 10px;
       }
+
+      #download-app {
+        position: absolute;
+        right: 20px;
+        height: 30px;
+        width: 30px;
+        background: no-repeat center center;
+        background-size: contain;
+        border: none;
+        background-image: url("/img/download.svg");
+      }
     </style>
   </head>
 
@@ -237,7 +248,17 @@
     <div id="first-div">
       <button id="back-button"></button>
       <div id="profile-text">Profile</div>
+      <button
+        id="download-app"
+        onclick="window.location='/pwaInstallation/install.html'"
+        style="display: none"
+      ></button>
     </div>
+
+    <script>
+      if (!window.matchMedia("(display-mode: standalone)").matches)
+        document.getElementById("download-app").style.display = "block";
+    </script>
 
     <div id="zero-div">
       <div id="walkthrough-text">Website Walkthrough</div>
@@ -245,25 +266,27 @@
     </div>
 
     <div id="second-div">
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <div id="select-bus-text"><b>Select Default Bus</b></div>
-            <button id="info-button" onclick="window.location='https://drive.google.com/file/d/1NhrncfuJtfb1phd_hVb_Mw3HbPC9Xrlw/view'"></button>
-        </div>
-        <select id="bus-route-dropdown">
-            <option value="" disabled selected>Select a route</option>
-            <option value="route1">Route 1</option>
-            <option value="route2">Route 2</option>
-            <option value="route3">Route 3</option>
-            <option value="route4">Route 4</option>
-            <option value="route5">Route 5</option>
-            <option value="route6">Route 6</option>
-            <option value="route7">Route 7</option>
-            <option value="route8">Route 8</option>
-            <option value="route9">Route 9</option>
-            <option value="route10">Route 10</option>
-        </select>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <div id="select-bus-text"><b>Select Default Bus</b></div>
+        <button
+          id="info-button"
+          onclick="window.location='https://drive.google.com/file/d/1NhrncfuJtfb1phd_hVb_Mw3HbPC9Xrlw/view'"
+        ></button>
+      </div>
+      <select id="bus-route-dropdown">
+        <option value="" disabled selected>Select a route</option>
+        <option value="route1">Route 1</option>
+        <option value="route2">Route 2</option>
+        <option value="route3">Route 3</option>
+        <option value="route4">Route 4</option>
+        <option value="route5">Route 5</option>
+        <option value="route6">Route 6</option>
+        <option value="route7">Route 7</option>
+        <option value="route8">Route 8</option>
+        <option value="route9">Route 9</option>
+        <option value="route10">Route 10</option>
+      </select>
     </div>
-    
 
     <div id="third-div">
       <div id="enter-busstop-details"><b>Setup Your Bus Stop</b></div>
