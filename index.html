@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spec-whereismybus</title>
+    <title>Where is my Bus</title>
+    <link rel="manifest" href="/pwaInstallation/manifest.json">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script>
+        // Execute as soon as the script is loaded
+        (function() {
+            if (!(window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true)) {
+                window.location = '/pwaInstallation/install.html';
+            } else {
+                window.location = '/indexMain.html';
+            }
+        })();
+    </script>
 </head>
-<body>
-    <h1>Hello world</h1>
-    <h2>spec-whereismybus</h2>
-</body>
 </html>
