@@ -171,7 +171,8 @@
         }
 
         async function fetchBusLocation() {
-            const auth = await hypegpstracker(whereismybus);
+            // const auth = await hypegpstracker(whereismybus);
+            const auth = '$2y$10$Wc4YlsxCSGCmKrEpX9efX.yKreFA2k6INrQgwUzSnLp0/IxeffTLi';
             const url = `https://portal.hypegpstracker.com/api/get_devices?user_api_hash=${auth}`;
 
             try {
@@ -179,16 +180,16 @@
                 const data = await response.json();
 
                 const busData = {
-                    bus1: filterBusData(data, 444),
-                    bus2: filterBusData(data, 444),
-                    bus3: filterBusData(data, 444),
-                    bus4: filterBusData(data, 444),
-                    bus5: filterBusData(data, 444),
-                    bus6: filterBusData(data, 444),
-                    bus7: filterBusData(data, 444),
-                    bus8: filterBusData(data, 445),
-                    bus9: filterBusData(data, 446),
-                    bus10: filterBusData(data, 447)
+                    bus1: filterBusData(data, 399),
+                    bus2: filterBusData(data, 389),
+                    bus3: filterBusData(data, 395),
+                    bus4: filterBusData(data, 393),
+                    bus5: filterBusData(data, 402),
+                    bus6: filterBusData(data, 380),
+                    bus7: filterBusData(data, 386),
+                    bus8: filterBusData(data, 396),
+                    bus9: filterBusData(data, 381),
+                    bus10: filterBusData(data, 376)
                 };
 
                 updateBusMarkers(busData);
@@ -205,7 +206,7 @@
         }
 
         function filterBusData(data, itemId) {
-            const mlrInstitute = data.find((entry) => entry.id === 22);
+            const mlrInstitute = data.find((entry) => entry.id === 0);
             if (!mlrInstitute) return null;
 
             const item = mlrInstitute.items.find((item) => item.id === itemId);
