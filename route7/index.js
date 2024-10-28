@@ -269,7 +269,7 @@ function filterData(data) {
   const mlrInstitute = data.find((entry) => entry.id === 0);
   if (!mlrInstitute) return null;
 
-  const item = mlrInstitute.items.find((item) => item.id === 393);
+  const item = mlrInstitute.items.find((item) => item.id === 386);
   if (!item) return null;
 
   const { lat, lng, speed } = item;
