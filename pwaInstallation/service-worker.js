@@ -1,7 +1,6 @@
 const CACHE_NAME = 'bus-tracking-app-cache-v1';
 const urlsToCache = [
-    '/pwaInstallation/images/logo682.png',
-    '/busAnimation.json'
+    '/pwaInstallation/images/logo682.png'
 ];
 
 self.addEventListener('install', event => {
