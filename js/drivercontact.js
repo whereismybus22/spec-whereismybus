@@ -1,54 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const incharges = [
-        { name: "Incharge 1", description: "Bus Route 1", phone: "tel:1234567801", whatsapp: "https://wa.me/1234567801" },
-        { name: "Incharge 2", description: "Bus Route 2", phone: "tel:1234567802", whatsapp: "https://wa.me/1234567802" },
-        { name: "Incharge 3", description: "Bus Route 3", phone: "tel:1234567803", whatsapp: "https://wa.me/1234567803" },
-        { name: "Incharge 4", description: "Bus Route 4", phone: "tel:1234567804", whatsapp: "https://wa.me/1234567804" },
-        { name: "Incharge 5", description: "Bus Route 5", phone: "tel:1234567805", whatsapp: "https://wa.me/1234567805" },
-        { name: "Incharge 6", description: "Bus Route 6", phone: "tel:1234567806", whatsapp: "https://wa.me/1234567806" },
-        { name: "Incharge 7", description: "Bus Route 7", phone: "tel:1234567807", whatsapp: "https://wa.me/1234567807" },
-        { name: "Incharge 8", description: "Bus Route 8", phone: "tel:1234567808", whatsapp: "https://wa.me/1234567808" },
-        { name: "Incharge 9", description: "Bus Route 9", phone: "tel:1234567809", whatsapp: "https://wa.me/1234567809" },
-        { name: "Incharge 10", description: "Bus Route 10", phone: "tel:1234567810", whatsapp: "https://wa.me/1234567810" },
-        { name: "Incharge 11", description: "Bus Route 11", phone: "tel:1234567811", whatsapp: "https://wa.me/1234567811" },
-        { name: "Incharge 12", description: "Bus Route 12", phone: "tel:1234567812", whatsapp: "https://wa.me/1234567812" },
-        { name: "Incharge 13", description: "Bus Route 13", phone: "tel:1234567813", whatsapp: "https://wa.me/1234567813" },
-        { name: "Incharge 14", description: "Bus Route 14", phone: "tel:1234567814", whatsapp: "https://wa.me/1234567814" },
-        { name: "Incharge 15", description: "Bus Route 15", phone: "tel:1234567815", whatsapp: "https://wa.me/1234567815" },
-        { name: "Incharge 16", description: "Bus Route 16", phone: "tel:1234567816", whatsapp: "https://wa.me/1234567816" },
-        { name: "Incharge 17", description: "Bus Route 17", phone: "tel:1234567817", whatsapp: "https://wa.me/1234567817" },
-        { name: "Incharge 18", description: "Bus Route 18", phone: "tel:1234567818", whatsapp: "https://wa.me/1234567818" },
-        { name: "Incharge 19", description: "Bus Route 19", phone: "tel:1234567819", whatsapp: "https://wa.me/1234567819" },
-        { name: "Incharge 20", description: "Bus Route 20", phone: "tel:1234567820", whatsapp: "https://wa.me/1234567820" },
-        { name: "Incharge 21", description: "Bus Route 21", phone: "tel:1234567821", whatsapp: "https://wa.me/1234567821" },
-        { name: "Incharge 22", description: "Bus Route 22", phone: "tel:1234567822", whatsapp: "https://wa.me/1234567822" },
-        { name: "Incharge 23", description: "Bus Route 23", phone: "tel:1234567823", whatsapp: "https://wa.me/1234567823" }
+        { name: "Incharge 1", description: "Administrative Officer", phone: "tel:9959222269", whatsapp: "https://wa.me/9959222269" }
     ];
 
     const drivers = [
-        { name: "Route 1", description: "Name 1", phone: "tel:1234567801", whatsapp: "https://wa.me/1234567801" },
-        { name: "Route 2", description: "Name 2", phone: "tel:1234567802", whatsapp: "https://wa.me/1234567802" },
-        { name: "Route 3", description: "Name 3", phone: "tel:1234567803", whatsapp: "https://wa.me/1234567803" },
-        { name: "Route 4", description: "Name 4", phone: "tel:1234567804", whatsapp: "https://wa.me/1234567804" },
-        { name: "Route 5", description: "Name 5", phone: "tel:1234567805", whatsapp: "https://wa.me/1234567805" },
-        { name: "Route 6", description: "Name 6", phone: "tel:1234567806", whatsapp: "https://wa.me/1234567806" },
-        { name: "Route 7", description: "Name 7", phone: "tel:1234567807", whatsapp: "https://wa.me/1234567807" },
-        { name: "Route 8", description: "Name 8", phone: "tel:1234567808", whatsapp: "https://wa.me/1234567808" },
-        { name: "Route 9", description: "Name 9", phone: "tel:1234567809", whatsapp: "https://wa.me/1234567809" },
-        { name: "Route 10", description: "Name 10", phone: "tel:1234567810", whatsapp: "https://wa.me/1234567810" },
-        { name: "Route 11", description: "Name 11", phone: "tel:1234567811", whatsapp: "https://wa.me/1234567811" },
-        { name: "Route 12", description: "Name 12", phone: "tel:1234567812", whatsapp: "https://wa.me/1234567812" },
-        { name: "Route 13", description: "Name 13", phone: "tel:1234567813", whatsapp: "https://wa.me/1234567813" },
-        { name: "Route 14", description: "Name 14", phone: "tel:1234567814", whatsapp: "https://wa.me/1234567814" },
-        { name: "Route 15", description: "Name 15", phone: "tel:1234567815", whatsapp: "https://wa.me/1234567815" },
-        { name: "Route 16", description: "Name 16", phone: "tel:1234567816", whatsapp: "https://wa.me/1234567816" },
-        { name: "Route 17", description: "Name 17", phone: "tel:1234567817", whatsapp: "https://wa.me/1234567817" },
-        { name: "Route 18", description: "Name 18", phone: "tel:1234567818", whatsapp: "https://wa.me/1234567818" },
-        { name: "Route 19", description: "Name 19", phone: "tel:1234567819", whatsapp: "https://wa.me/1234567819" },
-        { name: "Route 20", description: "Name 20", phone: "tel:1234567820", whatsapp: "https://wa.me/1234567820" },
-        { name: "Route 21", description: "Name 21", phone: "tel:1234567821", whatsapp: "https://wa.me/1234567821" },
-        { name: "Route 22", description: "Name 22", phone: "tel:1234567822", whatsapp: "https://wa.me/1234567822" },
-        { name: "Route 23", description: "Name 23", phone: "tel:1234567823", whatsapp: "https://wa.me/1234567823" }
+        { name: "Route 1", description: "G.V Reddy", phone: "tel:9000252535", whatsapp: "https://wa.me/9000252535" },
+        { name: "Route 2", description: "M.N Reddy", phone: "tel:9494444468", whatsapp: "https://wa.me/9494444468" },
+        { name: "Route 3", description: "T.N Rao", phone: "tel:9963120818", whatsapp: "https://wa.me/9963120818" },
+        { name: "Route 4", description: "P Kantaiah", phone: "tel:8074017988", whatsapp: "https://wa.me/8074017988" },
+        { name: "Route 5", description: "Subash Rao", phone: "tel:7036864220", whatsapp: "https://wa.me/7036864220" },
+        { name: "Route 6", description: "SD. Zafeer", phone: "tel:9948056679", whatsapp: "https://wa.me/9948056679" },
+        { name: "Route 7", description: "Dasharatham", phone: "tel:7382817805", whatsapp: "https://wa.me/7382817805" },
+        { name: "Route 8", description: "Esu Padham", phone: "tel:9182265556", whatsapp: "https://wa.me/9182265556" },
+        { name: "Route 9", description: "Siddi Ramulu", phone: "tel:8466850500", whatsapp: "https://wa.me/8466850500" },
+        { name: "Route 10", description: "B. Ram Reddy", phone: "tel:8332022569", whatsapp: "https://wa.me/8332022569" }
     ];
 
 
