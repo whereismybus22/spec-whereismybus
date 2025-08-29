@@ -33,9 +33,9 @@ function sendContactForm(event) {
   const issue = issueSelect.options[issueSelect.selectedIndex].text;
   const description = document.getElementById("query").value.trim();
   const os = getMobileOS();
-  const college = "Sreeja International School";
+  const college = "St peters college of Engineering";
   const subject = issue;
-  const body = 'School : ' + college + '\n' +
+  const body = 'Institution : ' + college + '\n' +
                'Mobile OS : ' + os + '\n' +
                'Name : ' + name + '\n' +
                'Mobile Number : ' + phone + '\n' +
