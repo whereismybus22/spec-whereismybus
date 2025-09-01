@@ -6,6 +6,19 @@
 	<title>Where is my Bus</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
+
+		const urlParams = new URLSearchParams(window.location.search);
+		const username = urlParams.get('username');
+		const password = urlParams.get('password');
+
+		if (username && password) {
+			const correctUsername = 'SPEC@2007';
+			const correctPassword = 'SPEC@2007';
+			if (username === correctUsername && password === correctPassword) {
+				localStorage.setItem('login', 'true');
+			}
+		}
+
 		// Immediate redirection logic
 		const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
 		if (!localStorage.getItem('login')) {
