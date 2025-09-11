@@ -46,5 +46,17 @@
     { "source": "/route22/", "destination": "/mainMap/index.html" },
     { "source": "/route23", "destination": "/mainMap/index.html" },
     { "source": "/route23/", "destination": "/mainMap/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html",
+      "has": [
+        {
+          "type": "missing"
+        }
+      ],
+      "statusCode": 404
+    }
   ]
 }
