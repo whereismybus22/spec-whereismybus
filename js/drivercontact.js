@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const incharges = [
-        { name: "Incharge 1", description: "Administrative Officer", phone: "tel:9959222269", whatsapp: "https://wa.me/9959222269" }
+        { name: "Incharge 1", description: "Administrative Officer", phone: "tel:9959222269", whatsapp: "https://wa.me/+919959222269" }
     ];
 
     const drivers = [
-        { name: "Route 1", description: "G.V Reddy", phone: "tel:9000252535", whatsapp: "https://wa.me/9000252535" },
-        { name: "Route 2", description: "M.N Reddy", phone: "tel:9494444468", whatsapp: "https://wa.me/9494444468" },
-        { name: "Route 3", description: "T.N Rao", phone: "tel:9963120818", whatsapp: "https://wa.me/9963120818" },
-        { name: "Route 4", description: "P Kantaiah", phone: "tel:8074017988", whatsapp: "https://wa.me/8074017988" },
-        { name: "Route 5", description: "Subash Rao", phone: "tel:7036864220", whatsapp: "https://wa.me/7036864220" },
-        { name: "Route 6", description: "SD. Zafeer", phone: "tel:9948056679", whatsapp: "https://wa.me/9948056679" },
-        { name: "Route 7", description: "Dasharatham", phone: "tel:7382817805", whatsapp: "https://wa.me/7382817805" },
-        { name: "Route 8", description: "Esu Padham", phone: "tel:9182265556", whatsapp: "https://wa.me/9182265556" },
-        { name: "Route 9", description: "Siddi Ramulu", phone: "tel:8466850500", whatsapp: "https://wa.me/8466850500" },
-        { name: "Route 10", description: "B. Ram Reddy", phone: "tel:8332022569", whatsapp: "https://wa.me/8332022569" }
+        { name: "Route 1", description: "G.V Reddy", phone: "tel:9000252535", whatsapp: "https://wa.me/+919000252535" },
+        { name: "Route 2", description: "M.N Reddy", phone: "tel:9494444468", whatsapp: "https://wa.me/+919494444468" },
+        { name: "Route 3", description: "T.N Rao", phone: "tel:9963120818", whatsapp: "https://wa.me/+919963120818" },
+        { name: "Route 4", description: "P Kantaiah", phone: "tel:8074017988", whatsapp: "https://wa.me/+918074017988" },
+        { name: "Route 5", description: "Subash Rao", phone: "tel:7036864220", whatsapp: "https://wa.me/+917036864220" },
+        { name: "Route 6", description: "SD. Zafeer", phone: "tel:9948056679", whatsapp: "https://wa.me/+919948056679" },
+        { name: "Route 7", description: "Dasharatham", phone: "tel:7382817805", whatsapp: "https://wa.me/+917382817805" },
+        { name: "Route 8", description: "Esu Padham", phone: "tel:9182265556", whatsapp: "https://wa.me/+919182265556" },
+        { name: "Route 9", description: "Siddi Ramulu", phone: "tel:8466850500", whatsapp: "https://wa.me/+918466850500" },
+        { name: "Route 10", description: "B. Ram Reddy", phone: "tel:8332022569", whatsapp: "https://wa.me/+918332022569" }
     ];
 
 
