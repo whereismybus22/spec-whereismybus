@@ -755,6 +755,11 @@
     ];
 
     const thisRoute = localStorage.getItem('thisRoute');
+
+    if(localStorage.getItem('thisRoute')=="route5"){
+        window.location='/announcement.html';
+    }
+    
     const matchedRoute = allRoutes.find(routeArr => routeArr[0] === thisRoute);
 
     const thisRouteDisplayName = matchedRoute ? matchedRoute[1] : null;
